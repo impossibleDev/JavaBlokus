@@ -1,4 +1,4 @@
-package view;
+package view.gameUi;
 
 import model.GameConstants;
 import shared.Team;

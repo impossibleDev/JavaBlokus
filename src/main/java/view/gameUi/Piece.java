@@ -1,4 +1,4 @@
-package shared;
+package view.gameUi;
 
 public class Piece {
     public final static boolean[][][] pieces;
