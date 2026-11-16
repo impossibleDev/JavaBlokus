@@ -1,12 +1,12 @@
-package oldIgnore.view;
+package view;
 
-import oldIgnore.model.GameConstants;
-import oldIgnore.shared.Team;
+import model.GameConstants;
+import shared.Team;
 
 import javax.swing.*;
 import java.awt.*;
 
-import static oldIgnore.view.ViewConstants.teamColors;
+import static view.ViewConstants.teamColors;
 
 public class BoardPanel extends JPanel {
     private final int blockSize = 20; //or mabye blockSize is dynmaic to JPanle size?
@@ -20,11 +20,15 @@ public class BoardPanel extends JPanel {
 
     public void updateBoard(Team[][] board){
         this.board = board;
+        System.out.print("MM!!");
         repaint();
     }
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
+        System.out.print("ZZ!!");
+        if (board == null) return;
+        System.out.print("DRAWW!!");
         for (int x = 0; x< GameConstants.boardSize; x++){
             for (int y=0; y<GameConstants.boardSize; y++){
                 //draw tile

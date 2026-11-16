@@ -1,4 +1,4 @@
-package oldIgnore.shared;
+package shared;
 
 public class Piece {
     public final static boolean[][][] pieces;

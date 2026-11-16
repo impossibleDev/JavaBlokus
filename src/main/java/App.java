@@ -1,6 +1,4 @@
-package oldIgnore;
-
-import oldIgnore.controller.AppController;
+import controller.AppController;
 
 public class App {
 

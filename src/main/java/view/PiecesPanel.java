@@ -1,4 +1,4 @@
-package oldIgnore.view;
+package view;
 
 import javax.swing.*;
 

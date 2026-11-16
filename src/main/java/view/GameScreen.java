@@ -1,6 +1,6 @@
-package oldIgnore.view;
+package view;
 
-import oldIgnore.shared.Team;
+import shared.Team;
 
 public class GameScreen extends Screen{
     private BoardPanel boardPanel;

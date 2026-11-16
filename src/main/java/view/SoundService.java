@@ -1,4 +1,4 @@
-package oldIgnore.view;
+package view;
 
 import javax.sound.sampled.Clip;
 import java.util.HashMap;

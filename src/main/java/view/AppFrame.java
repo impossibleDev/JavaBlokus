@@ -1,4 +1,4 @@
-package oldIgnore.view;
+package view;
 
 import javax.swing.*;
 import java.awt.event.ComponentAdapter;
@@ -38,6 +38,10 @@ public class AppFrame extends JFrame {
 
     public void toMenuScreen(){
         setScreen(gameScreen);
+    }
+
+    public GameScreen getGameScreen() {
+        return gameScreen;
     }
 
     private void setScreen(Screen screen) {

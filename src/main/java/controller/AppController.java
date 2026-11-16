@@ -1,6 +1,6 @@
-package oldIgnore.controller;
+package controller;
 
-import oldIgnore.view.AppFrame;
+import view.AppFrame;
 
 public class AppController {
 
@@ -18,6 +18,8 @@ public class AppController {
     }
     public AppController(){
         //test code her for now
-//        view.showGameScreen();
+        newGame();
+        view.toGameScreen();
+//        view.getGameScreen().updateBoard(gamecontroller.getBoard());
     }
 }

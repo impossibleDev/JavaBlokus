@@ -1,4 +1,4 @@
-package oldIgnore.view.overlay;
+package view.overlay;
 
 import javax.swing.*;
 

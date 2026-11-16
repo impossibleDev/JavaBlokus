@@ -1,6 +1,6 @@
-package oldIgnore.model;
+package model;
 
-import oldIgnore.shared.Team;
+import shared.Team;
 
 public class Game {
 

@@ -1,4 +1,4 @@
-package oldIgnore.controller;
+package controller;
 
 public class MenuController {
 

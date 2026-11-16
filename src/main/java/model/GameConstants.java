@@ -1,4 +1,4 @@
-package oldIgnore.model;
+package model;
 
 public class GameConstants {
     //CONSTANTS
