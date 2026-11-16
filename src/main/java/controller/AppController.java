@@ -9,7 +9,7 @@ public class AppController {
     private MenuController menucontroller;
 
     private void newGame(){
-        gamecontroller = new GameController();
+        gamecontroller = new GameController(view.getGameScreen());
         //new GameController(settings1, settings2, etc);
         // input paramters of settings stuff
     }

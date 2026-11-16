@@ -21,7 +21,7 @@ public class GameScreen extends Screen{
 
     }
 
-    public void updateBoard(Team[][] board){
+    public void update(Team[][] board){
         this.boardPanel.updateBoard(board);
     }
 
