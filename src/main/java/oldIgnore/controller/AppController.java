@@ -18,6 +18,6 @@ public class AppController {
     }
     public AppController(){
         //test code her for now
-        view.showGameScreen();
+//        view.showGameScreen();
     }
 }
