@@ -9,6 +9,7 @@ import view.gameUi.TeamPanel;
 import javax.swing.*;
 
 public class GameScreen extends Screen{
+	
     private BoardPanel boardPanel;
     private TeamPanel teamPanel;
     private PiecesPanel piecesPanel;
