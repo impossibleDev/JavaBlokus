@@ -42,7 +42,7 @@ public class GameScreen extends Screen{
     public void resize(){
         super.resize();
         boardPanel.setBounds((int)(getWidth()/2-200),50,400,400);
-        teamPanel.setBounds(100,50,150,400);;
+        teamPanel.setBounds(100,50,300,800);;
         piecesPanel.setBounds(getWidth()-250,50,150,400);
     }
 

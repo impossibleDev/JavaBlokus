@@ -9,7 +9,7 @@ import java.awt.*;
 public class PlayerCard extends JLabel {
 
     private static final int iconSize = 50;
-    private static final int iconPadding = 5;
+    private static final int iconPadding = 10;
     JLabel[] deck = new JLabel[GameConstants.deckSize];
     public PlayerCard(){
         super("w player card");
@@ -17,9 +17,9 @@ public class PlayerCard extends JLabel {
         setOpaque(true);
         setBackground(Color.BLUE);
 
-        //init icons
+        //init deck icons
         for (int i=0; i<deck.length; i++){
-            deck[i] = new JLabel();
+            deck[i] = new JLabel("🃏");
             deck[i].setBounds(10+(int)(iconSize+iconPadding)*i,30,iconSize,iconSize);
             add(deck[i]);
         }
