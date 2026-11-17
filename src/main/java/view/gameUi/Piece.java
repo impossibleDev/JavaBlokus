@@ -1,12 +1,46 @@
 package view.gameUi;
 
-public class Piece {
-    public final static boolean[][][] pieces;
-    //a piece is defined as boolean[][]
-    static {
-        //lets say 10 pieces in total (change later)
-        pieces = new boolean[10][][];
-        //new Scanner
-        //Scanner scan stuff in folder and add to pieces
+import shared.GameConstants;
+import shared.Team;
+
+import javax.swing.*;
+import java.awt.*;
+
+import static view.ViewConstants.teamColors;
+import static view.ViewConstants.blockSize;
+import static view.ViewConstants.blockPadding;
+
+
+public class Piece extends JLabel {
+    private Team team;
+    private boolean[][] data;
+    public Piece(int pieceNumber){
+        //TODO later implentation once PiceData loads correctly
+    }
+
+    public Piece(boolean[][] data, Team team){
+        setData(data);
+        setTeam(team);
+    }
+
+    public void setData(boolean[][] data){
+        this.data = data;
+        setSize(blockSize*data.length, blockSize*data[0].length);
+    }
+    public void setTeam(Team team){
+        this.team = team;
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        for (int x = 0; x< data.length; x++){
+            for (int y=0; y<data[0].length; y++){
+                //draw tile
+                g.setColor(teamColors.get(team));
+                if (data[x][y])
+                    g.fillRoundRect(x*blockSize, y*blockSize, blockSize-blockPadding, blockSize-blockPadding, 2,2);
+            }
+        }
     }
 }
