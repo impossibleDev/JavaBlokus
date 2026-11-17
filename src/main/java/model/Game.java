@@ -1,5 +1,6 @@
 package model;
 
+import shared.GameConstants;
 import shared.Team;
 
 public class Game {

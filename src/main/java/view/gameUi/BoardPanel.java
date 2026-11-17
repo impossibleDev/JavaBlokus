@@ -1,6 +1,6 @@
 package view.gameUi;
 
-import model.GameConstants;
+import shared.GameConstants;
 import shared.Team;
 
 import javax.swing.*;
