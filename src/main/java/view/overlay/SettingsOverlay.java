@@ -1,4 +1,4 @@
 package view.overlay;
 
-public class SettingsOverlay {
+public class SettingsOverlay extends Overlay{
 }

@@ -16,7 +16,10 @@ public abstract class Screen extends JPanel {
     public void setOverlay(Overlay overlay){
         removeOverlay();
         currentOverlay = overlay;
-        add(overlay);
+        add(overlay, BorderLayout.CENTER);
+        setComponentZOrder(overlay, 0);
+        revalidate();
+        repaint();
     }
 
     public void removeOverlay(){

@@ -1,5 +1,7 @@
 package view;
 
+import view.overlay.HelpPanelOverlay;
+
 import javax.swing.*;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
@@ -35,6 +37,7 @@ public class AppFrame extends JFrame {
 
     public void toGameScreen(){
         setScreen(gameScreen);
+        gameScreen.setOverlay(new HelpPanelOverlay());
     }
 
     public void toMenuScreen(){
