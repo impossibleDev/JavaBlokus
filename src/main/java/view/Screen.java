@@ -8,7 +8,7 @@ import java.awt.*;
 public abstract class Screen extends JPanel {
     private Overlay currentOverlay;
     public Screen(){
-        super(new BorderLayout());
+//        super(new BorderLayout());
         setBackground(Color.DARK_GRAY);
         setOpaque(true);
     }

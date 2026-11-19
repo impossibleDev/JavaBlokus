@@ -2,7 +2,6 @@ package view.overlay;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -10,21 +9,22 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
-import shared.GameFont;
+import view.GuiUtil;
+
 public class HelpPanelOverlay extends Overlay {
     public HelpPanelOverlay() {
         super();
-        setSize(500,500);
+        setPreferredSize(new Dimension(700, 500));
         setLayout(new BorderLayout());
         setOpaque(true);
         setBackground(Color.WHITE);
         setBorder(BorderFactory.createLineBorder(Color.BLACK, 3));
-        setPreferredSize(new Dimension(700, 500));
+
         //title
         JLabel title = new JLabel("BLOKUS", SwingConstants.CENTER);
-        title.setFont(GameFont.get(30f));
+        title.setFont(GuiUtil.PIXELFONTBIG);
         JButton close = new JButton("X");
-        close.setFont(GameFont.get(20f));
+        close.setFont(GuiUtil.PIXELFONTMEDIUM);
         close.addActionListener(e -> {
             if (getParent() != null) {
                 getParent().remove(this);
@@ -39,7 +39,7 @@ public class HelpPanelOverlay extends Overlay {
         add(top, BorderLayout.NORTH);
         //content
         JTextArea text = new JTextArea(loadHelpText());
-        text.setFont(GameFont.get(12f));
+        text.setFont(GuiUtil.PIXELFONTMEDIUM);
         text.setEditable(false);
         text.setLineWrap(true);
         text.setWrapStyleWord(true);

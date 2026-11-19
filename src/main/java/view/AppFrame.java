@@ -36,8 +36,8 @@ public class AppFrame extends JFrame {
 
 
     public void toGameScreen(){
-        setScreen(gameScreen);
-        gameScreen.setOverlay(new HelpPanelOverlay());
+        setScreen(menuScreen);
+//        gameScreen.setOverlay(new HelpPanelOverlay());
     }
 
     public void toMenuScreen(){
