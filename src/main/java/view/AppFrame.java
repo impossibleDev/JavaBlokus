@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
+//Aiden
 public class AppFrame extends JFrame {
     //SCREENS
     private GameScreen gameScreen = new GameScreen();
@@ -37,12 +38,16 @@ public class AppFrame extends JFrame {
     }
 
     public void toMenuScreen(){
-        setScreen(gameScreen);
+        setScreen(menuScreen);
     }
 
     public GameScreen getGameScreen() {
         return gameScreen;
     }
+    public MenuScreen getMenuScreen() {
+        return menuScreen;
+    }
+
 
     private void setScreen(Screen screen) {
         if (this.screen != null) {

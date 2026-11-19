@@ -11,12 +11,9 @@ import static view.ViewConstants.blockSize;
 import static view.ViewConstants.blockPadding;
 
 
-public class Piece extends JLabel {
+public class Piece extends JButton {
     private Team team;
     private boolean[][] data;
-    public Piece(int pieceNumber){
-        //TODO later implentation once PiceData loads correctly
-    }
 
     public Piece(boolean[][] data, Team team){
         setData(data);
@@ -29,6 +26,7 @@ public class Piece extends JLabel {
     }
     public void setTeam(Team team){
         this.team = team;
+        //COLOR CHANGE CODE??
     }
 
     @Override

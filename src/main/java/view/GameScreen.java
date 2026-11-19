@@ -8,17 +8,20 @@ import view.gameUi.TeamPanel;
 
 import javax.swing.*;
 
+//Aiden
 public class GameScreen extends Screen{
-	
+
+    //Ui elements
     private BoardPanel boardPanel;
     private TeamPanel teamPanel;
     private PiecesPanel piecesPanel;
     private Piece dragPiece;
     JLabel[] teamBgCorner;
 
+    //Constructor
     public GameScreen(){
         super();
-        //add boardPanel
+        //add ui elements
         boardPanel = new BoardPanel();
         teamPanel = new TeamPanel();
         piecesPanel = new PiecesPanel();
@@ -38,6 +41,9 @@ public class GameScreen extends Screen{
     public void setCurrentTeam(){
 
     }
+
+    //Get UI Elements
+    public PiecesPanel getPiecePanel(){ return piecesPanel;}
     @Override
     public void resize(){
         super.resize();
